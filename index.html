@@ -8,23 +8,31 @@
 </head>
 <body>
   <div class="container">
-    <div class="header">SUNSET POINT</div>
+    <div class="header"><h1>SUNSET POINT</h1></div>
     <div class="content">
       <!-- Image added here -->
       <img src="img7.jpg" alt="Background Image" class="background-image">
       <div class="overlay"></div>
-      <div class="title">ENJOY THIS MOMENT</div>
+      <div class="title"><h3>ENJOY THIS MOMENT</h3></div>
       
-      <button class="button-63" role="button" onclick="showAlert()">Button 63</button>
+      <button class="button-63" role="button" onclick="showCustomAlert()">Click Here</button>
+      <div class="custom-alert" id="customAlert">
+        <h2>Hello, World!</h2>
+        <button onclick="hideCustomAlert()">Close</button>
+      </div>
     </div>
     <div class="footer">&copy; Made By Tom Holland</div>
   </div>
 
   <script>
     // Function to show alert
-    function showAlert() {
-      alert("Hello, World");
-    }
+    function showCustomAlert() {
+  document.getElementById("customAlert").style.display = "block";
+}
+
+function hideCustomAlert() {
+  document.getElementById("customAlert").style.display = "none";
+}
   </script>
 </body>
 </html>

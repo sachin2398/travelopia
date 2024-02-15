@@ -12,8 +12,9 @@
     }
     .header, .footer {
       height: 100px;
-      background-color: #333333;
-      color: white;
+      background-color:rgb(215, 255, 201);
+      color: rgb(128, 0, 45);
+      text-shadow: 1px 1px 2px rgb(242, 221, 27), 0 0 1em rgb(47, 255, 0), 0 0 0.2em rgb(255, 204, 0);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -87,6 +88,63 @@
         outline: 0;
       }
       
+    /* <-> */
+    .custom-alert {
+      position: fixed;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* background-color:green; */
+      backdrop-filter:blur(0px);
+
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      display: none;
+      animation: fadeIn 0.5s ease forwards;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .custom-alert h2 {
+      margin-top: 0;
+      color:white; 
+      font-size: 36px; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      animation: bounce 0.5s ease forwards; 
+    }
+    @keyframes bounce {
+      0% {
+        transform: translateX(-10px);
+      }
+      50% {
+        transform: translateX(10px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    .custom-alert button {
+      background-color: green; 
+      color: white; 
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px; 
+      transition: background-color 0.3s ease; 
+      margin-left: 60px;
+    }
+    .custom-alert button:hover {
+      background-color: #07940e;
+    }
+    /* // */
       @media (min-width: 768px) {
         .button-63 {
           font-size: 24px;
