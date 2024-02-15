@@ -1,6 +1,12 @@
 # travelopia
 travelopia
 
+## Screenshots
+> ## Frame 1
+| Small Screen           | Large Screen            |
+| ---------------------- | ---------------------- |
+| ![homepage](https://github.com/sachin2398/travelopia/assets/113828281/386d46b3-9ed7-4817-8274-ad5d13e29834)| ![homepage](https://github.com/sachin2398/travelopia/assets/113828281/ff580255-2f79-46a9-859d-83f567889af5)|
+
 # Full Page Component
 
 This repository contains code for a full-page component featuring a background image with an overlay, a title, and a button that triggers a custom alert. The component is designed to be responsive and visually appealing.
