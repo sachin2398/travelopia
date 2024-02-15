@@ -48,4 +48,4 @@ The JavaScript file includes two functions:
 - **Custom Alert**: Instead of using the default browser alert, a custom alert is implemented for a more visually appealing user experience.
 - **Styling**: The component utilizes modern CSS techniques such as gradients, box shadows, and transitions to enhance its visual appeal.
 
-Feel free to customize the component further to suit your project's needs. If you have any questions or feedback, please don't hesitate to reach out. Happy coding!
+
